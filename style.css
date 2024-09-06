@@ -28,7 +28,7 @@ body {
 .main-container {
     color: var(--main-font-color);
     width: 50vw;
-    min-width: 450px;
+    min-width: 375px;
     margin: auto;
     font-family: var(--main-font);
     font-size: 15px;
@@ -36,11 +36,7 @@ body {
 
 }
 
-@media (min-width: 451px) {
-    .main-container {
-        margin-top: 1vw;
-    }
-}
+
 
 header {
     background: var(--header-background);
@@ -71,9 +67,11 @@ header {
     margin: 20px;
     width: 14vw;
     min-width: 160px;
-    margin-top: 30px;
+    margin-top: calc(150px + (0.01vw - 10%));
     filter: drop-shadow(0px 0px 5px black);
     transition: 0.5s ease-in-out;
+   
+    
     
 } #decoration:hover{
     animation: rainbow 1s infinite;
@@ -146,6 +144,15 @@ header {
 footer {
     text-align: center;
     font-size: 9px;
+}
+
+
+@media (max-width:878px){
+    #decoration{
+        margin: auto;
+        margin-left: 90px;
+        margin-right:300px;
+    }
 }
 
 
