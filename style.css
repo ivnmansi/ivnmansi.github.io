@@ -1,16 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 :root {
-    --body-color: radial-gradient(circle at 140%,#1d114e,black);
+    
+
+
+  --red: #e22c3c;
+  --red-orange: #e9404b;
+  --orange: #ee6748;
+  --amber: #fa9f50;
+  --yellow: #ffd85e;
+  --lime: #97e768;
+  --mint: #52eea3; 
+  --cyan: #51e1e9;
+  --cool-cyan: #43cfea;
+  --light-blue: #54b6f8;
+  --blue: #437cf3;
+  --blue-violet: #6f51f4;
+  --violet: #9446f8;
+  --purple: #c952ed;
+  --magenta: #e54f9b;
+  --hot-red: #e3365e;
+  --cool-gray: #515768;
+  --default-text-color: #d0d0d0;
+    
     --main-font: fira sans; 
-    --main-font-color:#7358bc;
+    --main-font-color:var(--default-text-color);
     
     --header-background:;
-    --header-text-color:#7358bc;
+    --header-text-color:var(--violet);
+    --header-font: jetbrains mono
 }
 
 a {
-    color: purple !important;
+    color: var(--purple) !important;
 }
 
 * {
@@ -20,7 +43,7 @@ a {
 }
 
 body {
-    background: var(--body-color);
+    background: radial-gradient(circle at 130%,var(--magenta),var(--blue-violet),black,black);
     
 }
 
@@ -42,10 +65,11 @@ header {
     background: var(--header-background);
     color: var(--header-text-color);
     padding: 5px;
+    text-shadow: 0px 0px 2px black
 }
 #header-title{
     font-size: 30px;
-    font-family: rubik mono one;
+    font-family: var(--header-font);
     font-weight: bold;
 }
 
@@ -80,34 +104,46 @@ header {
 
 #info {
     margin-top: 70px;
-    color: #522896;
+    color: var(--violet);
     display: grid;
-    border-left: 2px solid #4721af;
+    border: 1px solid var(--blue-violet);
     padding-left: 20px;
-    background: rgba(6, 0, 16, 0.4);
+    background: rgba(6, 0, 16, 0.7);
     padding-top: 20px;
     padding-bottom: 10px;
     margin-bottom: 70px;
+    border-radius: 10px;
+    padding-right: 5px;
+    box-shadow: 0px 0px 3px black;
+    text-shadow: 0px 0px 3px black;
+}
+#info:hover{
+    transform:translateY(-10px)
 }
 
 #he1{
-    font-family: rubik mono one;
+    font-family: jetbrains mono;
     font-size: 25px;
-    color: #1c0e48;
+    color: var(--violet);
+    text-decoration: underline 3px;
+} #he1:hover{
+    transform: translateX(20px);
+
 }
 
 .proyecto {
     display: inline-grid;
-    border: 1px solid;
+    border: 1px solid var(--blue-violet);
     border-radius: 5px;
     padding: 5px;
     margin: 10px;
     width: 200px;
     background: rgba(7, 1, 16, 0.82);
     vertical-align: sub;
+    box-shadow: 0px 0px 3px black;
     
 } .proyecto:hover{
-    box-shadow: 0px 0px 10px #230469;
+    box-shadow: 0px 0px 3px var(--blue);
     transform: scale(1.05)
 }
 
@@ -122,14 +158,14 @@ header {
     margin: 5px;
 }
 #tag{
-    border: 1px solid #180031;
+
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 10px;
     display: grid;
     float: left;
-    background: linear-gradient( purple, #2b006d);
+    background: linear-gradient( var(--mint), var(--blue-violet) 60%);
     font-weight: bold;
     color: #0f0021;
     
@@ -166,4 +202,24 @@ footer {
     100%{
         filter: hue-rotate(360deg) drop-shadow(0px 0px 5px);
     }
+}
+
+#desc {
+    text-shadow: 0px 0px 3px black;
+    text-align: justify;
+    border-left: 2px solid var(--violet);
+    padding-left: 10px;
+}
+
+#skills {
+    border-left:1px solid var(--violet);
+    margin-top: 5px;
+    margin-left: 35px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+#skills img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px black; 
 }
