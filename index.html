@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>pagina principal</title>
+        <title>ivnmansi</title>
         
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/x-icon" href="/img/icon.webp">
@@ -17,134 +17,120 @@
         
         
         <header>
-            <span id="header-title">~/ivnmansi<span style="font-size: 18px;color: var(--purple)">.github.io/ </span></span> <span id="header-subtitle">mis proyectos y otros</span>
-            
+            <span id="header-title">~/ivnmansi<span style="font-size: 18px;color: var(--cool-cyan)">.github.io/</span><span id="subtitle">mis proyectos y más</span><span id="cursorblink">_</span></span>
         </header>
-    
-        <article class="content">
-        
-            <div class="aviso">
-                <i>¡¡Página mejor vista desde Firefox y una pantalla 1920x1080!!</i> La responsividad aún no está al 100% implementada
-            </div>
-         
-            
-            
-            <img id="decoration" src="img/ajolote.gif" align="left">
-            
-            <article id="info">
-                
-               
-                
-                <span style="color: var(--mint);font-family: jetbrains mono;font-size: 15px;font-weight: bold"> > Iván Mansilla C.  <img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/shiny/gastly.png" style="margin-top: -50px;margin-left: -30px"></span> <br>
-                <span style="color: var(--cyan)">Estudiante de 2do año de Ingeniería Civil en Computación e Informática</span><br>
-                <i style="color: var(--light-blue)">Universidad de Magallanes, Punta Arenas, Chile</i><br>
-                
-                <span style="padding-left: 20px;font-size: 12px;color: var(--blue)"><img src="img/email.png" height="12px"> <i>ivan.mansillacor@gmail.com / ivnmansi@umag.cl</i></span><br>
-                <span style="padding-left: 20px;font-size: 12px;color: #25204d"><a href="https://github.com/ivnmansi"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white"></a></span>
-                
-                <div id="skills">
-                <img src=" 	https://img.shields.io/badge/C-A8B9CC?style=flat&logo=c&logoColor=black">
-                    <img src="https://img.shields.io/badge/Python-14354C?style=flat&logo=python&logoColor=white">
-                <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white">
-                    <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white">
-                    
-                </div>
-            
-            </article>
-            
-            
-            <article id="desc">
-            Esta página web tiene principalmente como objetivo exponer mis proyectos de una forma más visual. Sin embargo es probable que en el futuro otras cosas más sean añadidas. Esta página es un constante <i>work in progress</i>, al que se le irá mejorando o optimizando cosas a medida que vaya aprendiendo y avanzando en la carrera :)
-            </article>
-            
-            <br><br><br>
-            
-            <h1 id="he1">Proyectos</h1>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); justify-content: flex-start;align-items: flex-start; gap: 0;">
-                
-                <div class="proyecto">
 
+        <div class="content">
+
+            <div class="left-content">
+                <div class="index">
+                    <h3>> índice</h3>
+                    <ul>
+                        <li><a href="#proyectos">proyectos</a></li>
+                        <li><a href="#recursos">recursos</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="right-content">
+                <div class="card">
+                    <h2>Iván Mansilla Cordeiro<span style="color: gray;font-size: 12px;display: inline-block;margin-left: 10px;"> he/him, 20 years old</span></h2>
+                    Estudiante de <b>3er año</b> de <b>Ingenieria Civil Informática</b><br>
+                    Universidad de Magallanes, Punta Arenas, Chile<br>
+                    <img src="img/email.png" height="12px"> <a href="mailto:ivan.mansillacor@gmail.com">ivan.mansillacor@gmail.com</a>/<a href="mailto:ivnmansi@umag.cl">ivnmansi@umag.cl</a><br>
+                    <a href="https://github.com/ivnmansi"><img src="https://img.shields.io/badge/GitHub-181717?style=plastic&logo=github&logoColor=white" style="margin-bottom: -10px;"></a>
+                </div>
+                Actualmente me encuentro trabajando con los siguientes <b>lenguajes</b>:<br>
+                <div class="language-list">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" id="language">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" id="language">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" id="language">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" id="language">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" id="language">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" id="language">
+                </div>
+
+                Esta página web fue creada principalmente como portafolio y para exponer mis proyectos de forma más visual, sin embargo se espera añadir otras cosas de utilidad a futuro :)<br><br>
+
+                <h3 id="proyectos">> proyectos</h3>
+
+                <div class="proyecto">
                     <img src="img/devgraph.png">
-                    <p id="desc">Simulación de una red social dentro del terminal, hecho para el curso de Estructura de Datos. <i>Creado junto a Franco Aguilar, Diego Sanhueza, Duván Figueroa y Miguel Maripillán</i> </p>
+                    <p id="desc">
+                        Simulación via terminal de una red social funcional y con sistema de recomendaciones. Hecho junto a Franco Aguilar, Diego Sanhueza, Duván Figueroa y Miguel Maripillán para el curso de <i>Estructura de datos 2024/2</i>
+                    </p>
+                    <a href="https://github.com/Diego0119/social-network">Repositorio</a><br>
                     
-                    <a href="https://github.com/Diego0119/social-network">Repositorio</a>
-
-                    <div>
-                    <div id="tag">C</div>
-
-                    </div>
-                    
+                    <span id="tag">C</span>
                 </div>
-                
-                <div class="proyecto">
 
+                <div class="proyecto">
                     <img src="img/fly.png">
-                    <p id="desc">Motor de búsqueda de palabras clave con archivos locales para GNU/Linux. Hecho para el curso de Estructura de Datos <i>Creado junto a Ayrton Morrison, Milton Hernández y Franco Aguilar</i> </p>
+                    <p id="desc">
+                        Sistema de búsqueda de archivos según palabras clave. Hecho junto a Milton Hernández, Ayrton Morrison y Franco Aguilar para el curso de <i>Estructura de datos 2024/2</i>
+                    </p>
+                    <a href="https://github.com/ayrvanmo/Fly">Repositorio</a><br>
                     
-                    <a href="https://github.com/ayrvanmo/Fly">Repositorio</a>
-
-                    <div>
-                    <div id="tag">C</div>
-                    <div id="tag">Linux</div>
-
-                    </div>
-                    
+                    <span id="tag">C</span>
+                    <span id="tag">Linux</span>
                 </div>
-                
-                <div class="proyecto">
 
+                <div class="proyecto">
                     <img src="img/forking.png">
-                    <p id="desc">Simulador de gestión de procesos (gestión de memoria y planificación), hecho para el curso de Estructura de Datos. <i>Creado junto a Ayrton Morrison y Milton Hernández</i></p>
+                    <p id="desc">
+                        Simulador de gestión de procesos (gestión de memoria y planificación), hecho junto a Milton Hernández y Ayrton Morrison para el curso de <i>Estructura de datos 2024/2.</i>
+                    </p>
+                    <a href="https://github.com/ayrvanmo/ForKing">Repositorio</a><br>
                     
-                    <a href="https://github.com/ayrvanmo/ForKing">Repositorio</a>
-
-                    <div>
-                    <div id="tag">C</div>
-
-                    </div>
-                    
+                    <span id="tag">C</span>
                 </div>
-                
-                <div class="proyecto">
 
+                <div class="proyecto">
                     <img src="img/ugit.png">
-                    <p id="desc">Sistema de control de versiones local para GNU/Linux inspirado en git. Hecho para el curso de Estructura de Datos. <i>Creado junto a Ayrton Morrison</i></p>
+                    <p id="desc">
+                        Sistema de control de versiones local para GNU/Linux. Hecho junto a Ayrton Morrison para el curso de <i>Estructura de datos 2024/2</i>
+                    </p>
+                    <a href="https://github.com/ayrvanmo/ugit">Repositorio</a><br>
                     
-                    <a href="https://github.com/ayrvanmo/ugit">Repositorio</a>
-
-                    <div>
-                    <div id="tag">C</div>
-                    <div id="tag">Linux</div>
-                    </div>
-                    
+                    <span id="tag">C</span>
+                    <span id="tag">Linux</span>
                 </div>
-                
+
                 <div class="proyecto">
-
                     <img src="img/houtou.png">
-                    <p id="desc">Juego <i>bullet hell</i> inspirado en <i>Touhou</i> hecho para el curso de Programación Estructurada</p>
+                    <p id="desc">
+                        Videojuego <i>bullet hell</i> para Windows inspirado en la saga <i>Touhou</i>. Hecho para el curso de <i>Programación Estructurada</i> 2024/1
+                    </p>
+                    <a href="https://github.com/ivnmansi/HOUTOU">Repositorio</a><br>
                     
-                    <a href="https://github.com/ivnmansi/HOUTOU">Repositorio</a>
-
-                    <div>
-                    <div id="tag">C</div>
-                    <div id="tag">Allegro 5</div>
-                    </div>
-                    
+                    <span id="tag">C</span>
+                    <span id="tag">Allegro5</span>
                 </div>
-                
+
+                <h3 id="recursos">> recursos</h3>
+                <p>en construcción</p>
+
+
+
+
+
+
             </div>
-            
-            
-            
+
         
-        </article>
+
+
+
+
+        </div>
+    
         
-        <footer>
-            Iván Mansilla © 2024
-        </footer>
+        
     </div>
+
+    <footer>
+        Iván Mansilla © 2024-2025
+    </footer>
     
     
 </body>
