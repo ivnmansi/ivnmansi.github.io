@@ -49,8 +49,8 @@ body {
 
 .main-container {
     color: var(--main-font-color);
-    width: 50vw;
-    min-width: 375px;
+    width: 40vw;
+    min-width: 600px;
     margin: auto;
     font-size: 15px;
     border: 1px solid var(--cool-gray);
@@ -87,30 +87,15 @@ header {
     vertical-align:-5px;
 }
 
-
-
-.left-content, .right-content {
-    padding: 5px;
-    display: inline-block;
-    vertical-align: top;
+#header-title:hover{
+    text-shadow: 0px 0px 4px var(--cool-cyan);
+    cursor:default;
 }
 
-.left-content{
-    width: 10vw;
-}
 
-.left-content ul {
-    list-style: "> ";
-    margin-left: 30px;
-}
 
-.left-content li:hover{
-    letter-spacing: 3px;
-}
 
 .right-content {
-    width: 37vw;
-    border-left: 1px solid var(--cool-gray);
     padding: 10px;
 }
 
@@ -190,8 +175,8 @@ h3:hover{
     padding: 5px;
     margin: 10px;
     margin-left: 0px;
-    width: 155px;
-    min-width: 100px;
+    width: 29%;
+    min-width: 160px;
     box-shadow: 0px 0px 3px black;
     text-align: center;
     display: inline-block;
@@ -225,7 +210,6 @@ h3:hover{
     margin-top: 10px;
     box-shadow: 0px 0px 4px black;
     
-    
 }
 
 .proyecto a{
@@ -245,38 +229,27 @@ footer {
 }
 
 
-@media (max-width:878px){
-    #decoration{
-        margin: auto;
-        margin-left: 90px;
-        margin-right:300px;
-    }
+@media (max-width:600px){
+    
+   .main-container{
+    width: 90vw;
+    min-width: 200px;
+   }
 
-    .left-content {
-        width: 50vw;
-        position: static;
-    }
+   .proyecto{
+    width: 96%;
+   }
 
-    .right-content {
-        margin-left: 0;
-        width: 50vw;
-        margin-top: 5px;
-    }
+   .proyecto #desc {
+    font-size: 14px;
+   }
+
+
+    
+    
 
 }
 
-
-@keyframes rainbow{
-    0%{
-        filter: hue-rotate(0deg) drop-shadow(0px 0px 5px);
-    }
-    50%{
-        filter: hue-rotate(180deg) drop-shadow(0px 0px 5px);
-    }
-    100%{
-        filter: hue-rotate(360deg) drop-shadow(0px 0px 5px);
-    }
-}
 
 @keyframes cursorblink {
     from, to { color: transparent;text-shadow: none; }

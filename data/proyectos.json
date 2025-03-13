@@ -1,0 +1,41 @@
+[
+    {
+        "nombre": "devgraph",
+        "descripcion": "Simulación via terminal de una red social funcional y con sistema de recomendaciones. Hecho junto a Franco Aguilar, Diego Sanhueza, Duván Figueroa y Miguel Maripillán para el curso de Estructura de datos 2024/2",
+        "imagen": "img/devgraph.png",
+        "link": "https://github.com/Diego0119/social-network",
+        "tags": ["C"]
+    },
+
+    {
+        "nombre": "Fly",
+        "descripcion": "Sistema de búsqueda de archivos según palabras clave. Hecho junto a Milton Hernández, Ayrton Morrison y Franco Aguilar para el curso de Estructura de datos 2024/2",
+        "imagen": "img/fly.png",
+        "link": "https://github.com/ayrvanmo/Fly",
+        "tags": ["C", "Linux"]
+    },
+
+    {
+        "nombre": "forking",
+        "descripcion": "Simulador de gestión de procesos (gestión de memoria y planificación), hecho junto a Milton Hernández y Ayrton Morrison para el curso de Estructura de datos 2024/2.",
+        "imagen": "img/forking.png",
+        "link": "https://github.com/ayrvanmo/ForKing",
+        "tags": ["C"]
+    },
+
+    {
+        "nombre": "ugit",
+        "descripcion": "Sistema de control de versiones local para GNU/Linux. Hecho junto a Ayrton Morrison para el curso de Estructura de datos 2024/2",
+        "imagen": "img/ugit.png",
+        "link": "https://github.com/ayrvanmo/ugit",
+        "tags": ["C","Linux"]
+    },
+
+    {
+        "nombre": "HOUTOU",
+        "descripcion": "Videojuego bullet hell para Windows inspirado en la saga Touhou. Hecho para el curso de Programación Estructurada 2024/1",
+        "imagen": "img/houtou.png",
+        "link": "https://github.com/ivnmansi/HOUTOU",
+        "tags": ["C","Allegro5"]
+    }
+]
