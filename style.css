@@ -53,7 +53,7 @@ body {
     width: 40vw;
     min-width: 600px;
     margin: auto;
-    font-size: 15px;
+    font-size: 13px;
     border: 1px solid var(--cool-gray);
     margin-top: 5px;
     box-shadow: 0px 0px 4px black;
@@ -80,6 +80,7 @@ header::after{
     width: calc(100% + 10px);
     margin: 0px -5px;
     animation: header-animation 2s linear infinite;
+    box-shadow: 0px 0px 4px black;
 }
 @keyframes header-animation {
     0% { background-position-x: 0px; }
@@ -123,6 +124,12 @@ header::after{
     border-left: 4px solid var(--cool-cyan);
     box-shadow: 0px 0px 4px black;
     font-size: 14px;
+    background-image: url(https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/609.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-blend-mode:color-dodge;
+    background-color: var(--black);
 }
 
 .card:hover {
@@ -210,7 +217,6 @@ h3:hover{
     
 } .proyecto:hover{
     transform: scale(1.02);
-    border: 1px solid var(--cool-cyan);
 }
 
 .proyecto img{
