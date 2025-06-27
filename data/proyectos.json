@@ -1,7 +1,14 @@
 [
     {
-        "nombre": "devgraph",
-        "descripcion": "Simulación via terminal de una red social funcional y con sistema de recomendaciones. Hecho junto a Franco Aguilar, Diego Sanhueza, Duván Figueroa y Miguel Maripillán para el curso de Estructura de datos 2024/2",
+        "nombre":"JuliaPlots",
+        "descripcion":"Obsidian plugin for making Julia plots of mathematical functions into your notes.",
+        "imagen":"https://github.com/ivnmansi/juliaplots/blob/master/demo/demo.gif?raw=true",
+        "link":"https://github.com/ivnmansi/juliaplots",
+        "tags":["TypeScript","Julia"]
+    },
+    {
+        "nombre": "devGraph",
+        "descripcion": "CLI simulation of a social network with feed and recommendation system. Allows users to create posts, follow others, etc. Made for the course of Data Structures 2024/2",
         "imagen": "img/devgraph.png",
         "link": "https://github.com/Diego0119/social-network",
         "tags": ["C"]
@@ -9,7 +16,7 @@
 
     {
         "nombre": "Fly",
-        "descripcion": "Sistema de búsqueda de archivos según palabras clave. Hecho junto a Milton Hernández, Ayrton Morrison y Franco Aguilar para el curso de Estructura de datos 2024/2",
+        "descripcion": "File browser system with keyword search for GNU/Linux. Made for the course of Data Structures 2024/2",
         "imagen": "img/fly.png",
         "link": "https://github.com/ayrvanmo/Fly",
         "tags": ["C", "Linux"]
@@ -17,15 +24,15 @@
 
     {
         "nombre": "forking",
-        "descripcion": "Simulador de gestión de procesos (gestión de memoria y planificación), hecho junto a Milton Hernández y Ayrton Morrison para el curso de Estructura de datos 2024/2.",
+        "descripcion": "Simulation of process management in an operating system (memory allocation and process scheduling). Made for the course of Data Structures 2024/2",
         "imagen": "img/forking.png",
         "link": "https://github.com/ayrvanmo/ForKing",
         "tags": ["C"]
     },
 
     {
-        "nombre": "ugit",
-        "descripcion": "Sistema de control de versiones local para GNU/Linux. Hecho junto a Ayrton Morrison para el curso de Estructura de datos 2024/2",
+        "nombre": "uGit",
+        "descripcion": "Local version control system with basic functionalities for GNU/Linux. Made for the course of Data Structures 2024/2",
         "imagen": "img/ugit.png",
         "link": "https://github.com/ayrvanmo/ugit",
         "tags": ["C","Linux"]
@@ -33,7 +40,7 @@
 
     {
         "nombre": "HOUTOU",
-        "descripcion": "Videojuego bullet hell para Windows inspirado en la saga Touhou. Hecho para el curso de Programación Estructurada 2024/1",
+        "descripcion": "Bullet hell minigame inspired by Touhou, made for the course of Structured Programming 2024/1",
         "imagen": "img/houtou.png",
         "link": "https://github.com/ivnmansi/HOUTOU",
         "tags": ["C","Allegro5"]

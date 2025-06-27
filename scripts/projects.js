@@ -9,9 +9,10 @@ async function loadProjects() {
         let card = document.createElement("div");
         card.classList.add("proyecto");
         card.innerHTML = `
+            <h4>${proyecto.nombre}</h4>
             <img src="${proyecto.imagen}" alt="${proyecto.nombre}">
             <p id="desc">${proyecto.descripcion}</p>
-            <a href="${proyecto.link}">Repositorio</a><br>
+            <a href="${proyecto.link}">Repository</a><br>
             ${proyecto.tags.map(tag => `<span id="tag">${tag}</span>`).join(" ")}
         `;
         container.appendChild(card);
