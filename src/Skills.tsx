@@ -1,7 +1,7 @@
 function Skills() {
     return (
         <div className="card">
-            <h3><i className="fa-solid fa-code"></i> Skills</h3>
+            <h3><i className="fa-solid fa-code"></i> Habilidades</h3>
 
             <div className="programming-languages">
                 <i className="devicon-c-original"></i>
@@ -28,7 +28,7 @@ function Skills() {
                 <i className="devicon-godot-plain"></i>
             </div>
 
-            <h3><i className="fa-solid fa-tools"></i> Technologies</h3>
+            <h3><i className="fa-solid fa-tools"></i> Tecnologías</h3>
             <div className="programming-languages">
                 <i className="devicon-git-plain"></i>
                 <i className="devicon-docker-plain"></i>

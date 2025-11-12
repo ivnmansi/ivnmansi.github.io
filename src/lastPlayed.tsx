@@ -64,7 +64,7 @@ export default function LastPlayed() {
 
   return (
     <>
-      <h3><i className="fa-solid fa-music"></i> Last played song</h3>
+      <h3><i className="fa-solid fa-music"></i> Última canción escuchada</h3>
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, justifyContent: 'center' }}>
         {albumArt ? (
           <img src={albumArt} alt={songName} width={48} height={48} style={{ borderRadius: 6 }} />

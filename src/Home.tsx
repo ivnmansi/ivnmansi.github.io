@@ -6,7 +6,7 @@ export default function Home() {
       <div className="card">
         <h1 className="text-gradient">Iván Mansilla</h1>
         <h2 className="subtitle">
-          <span className="typing">Computer engineering student at UMAG</span><span className='caret'>_</span>
+          <span className="typing">Estudiante de Ingenieria Civil en Computación</span><span className='caret'>_</span>
         </h2>
         <div className='links'>
           <i className="fa-solid fa-file-pdf"></i>

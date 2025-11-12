@@ -9,7 +9,7 @@ export function PageLayout() {
                 <Outlet />
             </div>
             <footer>
-                Made with <i className="fa-brands fa-react"></i> React 
+                Hecho con <i className="fa-brands fa-react"></i> React 
             </footer>
         </>
     )

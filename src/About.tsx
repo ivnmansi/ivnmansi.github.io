@@ -6,7 +6,7 @@ function About() {
                 <img src="/mii.png" alt="me" style={{ height:'100px', float:'left' }} ></img>
 
                 <p style={{ textAlign: "left", fontFamily: "roboto, sans-serif" }}>
-                    I'm <b>Iván Mansilla</b>, I'm 21 years old, I'm a 3rd year Computer Engineering student at the University of Magallanes. I'm also a hobbystic programmer and aspiring game developer
+                    Soy <b>Iván Mansilla</b>, tengo 21 años, soy estudiante de 3er año de Ingeniería Civil en Computación en la Universidad de Magallanes. También soy programador y desarrollador de juegos aficionado.
                 </p>
             
             </div>
