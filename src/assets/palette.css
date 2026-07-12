@@ -1,0 +1,32 @@
+:root {
+  --ink-950: #0b0a0c;
+  --ink-900: #121014;
+  --ink-800: #1c181d;
+  --ink-700: #292229;
+  --surface: rgba(31, 26, 31, 0.72);
+  --surface-strong: #211b21;
+  --line: rgba(255, 255, 255, 0.1);
+  --text: #f7f1f3;
+  --muted: #b9acb2;
+  --red-500: #ef4444;
+  --red-400: #fb5d5d;
+  --rose-400: #fb7185;
+  --glow: rgba(239, 68, 68, 0.3);
+}
+
+[data-bs-theme="dark"], :root {
+  --bs-body-bg: var(--ink-950);
+  --bs-body-bg-rgb: 11, 10, 12;
+  --bs-body-color: var(--text);
+  --bs-primary: var(--red-400);
+  --bs-primary-rgb: 251, 93, 93;
+  --bs-secondary: var(--muted);
+  --bs-secondary-rgb: 185, 172, 178;
+  --bs-danger: var(--red-500);
+  --bs-light: var(--text);
+  --bs-dark: var(--ink-800);
+  --bs-dark-rgb: 28, 24, 29;
+  --bs-link-color: var(--red-400);
+  --bs-link-hover-color: #ff8888;
+  --bs-border-color: var(--line);
+}

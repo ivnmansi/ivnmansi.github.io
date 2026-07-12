@@ -1,0 +1,42 @@
+@import 'palette.css';
+
+:root {
+  --bs-body-font-family: "Manrope", "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { background: var(--ink-950); }
+
+body {
+  min-width: 320px;
+  background:
+    radial-gradient(circle at 13% 6%, rgba(167, 27, 47, 0.2), transparent 24rem),
+    radial-gradient(circle at 88% 88%, rgba(239, 68, 68, 0.1), transparent 30rem),
+    var(--ink-950);
+  color: var(--text);
+}
+
+body::selection { background: var(--red-500); color: white; }
+
+a { text-decoration: none; }
+
+.eyebrow {
+  color: var(--red-400);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.section-title { font-size: clamp(2rem, 5vw, 3.8rem); font-weight: 800; letter-spacing: -0.06em; }
+.section-copy { color: var(--muted); line-height: 1.75; max-width: 42rem; }
+
+.glass-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(16px);
+}
