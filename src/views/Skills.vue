@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 const groups = [
     {
         title: 'Frontend',
@@ -12,7 +13,7 @@ const groups = [
     {
         title: 'Backend',
         icon: 'fa-solid fa-server',
-        items: [{ name: 'Laravel', icon: 'fa-brands fa-laravel' }, { name: 'SQL', icon: 'fa-solid fa-database' }]
+        items: [{name: 'Django', icon: 'fa-brands fa-python'},{ name: 'Laravel', icon: 'fa-brands fa-laravel' }, { name: 'SQL', icon: 'fa-solid fa-database' }]
     },
     {
         title: 'Programming languages',
@@ -25,7 +26,7 @@ const groups = [
     {
         title: 'Game development',
         icon: 'fa-solid fa-gamepad',
-        items: [{ name: 'SDL', icon: 'fa-solid fa-gamepad' }, { name: 'Allegro5', icon: 'fa-solid fa-wand-magic-sparkles' }]
+        items: [{ name: 'SDL3', icon: 'fa-solid fa-gamepad' }, { name: 'Allegro5', icon: 'fa-solid fa-wand-magic-sparkles' }]
     },
     {
         title: 'Other tools',

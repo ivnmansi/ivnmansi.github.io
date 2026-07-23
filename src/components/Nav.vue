@@ -10,6 +10,7 @@
         <RouterLink to="/">main()</RouterLink>
         <RouterLink to="/about">about()</RouterLink>
         <RouterLink to="/skills">skills()</RouterLink>
+        <RouterLink to="/projects">projects()</RouterLink>
       </div>
 
       <div class="social-links" aria-label="social media">
@@ -21,6 +22,8 @@
 </template>
 
 <script setup lang="ts">
+import { RouterLink } from 'vue-router';
+
 defineProps<{ title: string }>()
 </script>
 

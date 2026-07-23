@@ -15,6 +15,7 @@ declare module 'vue' {
     Card: typeof import('./src/components/Card.vue')['default']
     Nav: typeof import('./src/components/Nav.vue')['default']
     OutlineBadge: typeof import('./src/components/OutlineBadge.vue')['default']
+    ProjectCard: typeof import('./src/components/ProjectCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
