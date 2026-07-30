@@ -2,6 +2,8 @@
     import MinecraftSkin from '@/components/MinecraftSkin.vue';
     import AboutInfo from '@/components/AboutInfo.vue';
     import PageTitle from '@/components/PageTitle.vue';
+    import Button from 'primevue/button';
+    import ArrowRight from '@primeicons/vue/arrow-right';
 </script>
 <template>
     <section class="about-page mx-auto flex w-full max-w-6xl flex-col gap-8 px-2 py-6 md:py-12">
@@ -31,6 +33,14 @@
                     </article>
                 </div>
             </div>
+        </div>
+
+        <div class="mt-2 flex justify-end">
+            <router-link to="/skills">
+                <Button severity="help" class="next-page-button">
+                    View skills <ArrowRight />
+                </Button>
+            </router-link>
         </div>
     </section>
 </template>

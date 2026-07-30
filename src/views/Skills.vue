@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import PageTitle from '@/components/PageTitle.vue';
+import Button from 'primevue/button';
+import ArrowRight from '@primeicons/vue/arrow-right';
 
 const skillGroups = [
     {
@@ -103,6 +105,14 @@ const certificates = [
                 <h3 class="mt-8 text-xl font-bold text-surface-100">{{ certificate.title }}</h3>
                 <p class="mt-2 text-surface-400">{{ certificate.issuer }}</p>
             </article>
+        </div>
+
+        <div class="mt-2 flex justify-end">
+            <router-link to="/projects">
+                <Button severity="help" class="next-page-button">
+                    View projects <ArrowRight />
+                </Button>
+            </router-link>
         </div>
     </section>
 </template>
