@@ -22,7 +22,7 @@
 <template>
     <Panel class="w-full max-w-md hover-panel">
         <template #header>
-            <h2 class="">Homeserver status <Tag severity="warn">WIP API</Tag> <Tag severity="success">Online</Tag></h2>   
+            <h2 class=""><v-icon name="fa-server" class="mr-2" />Homeserver status <Tag severity="warn">WIP API</Tag> <Tag severity="success">Online</Tag></h2>   
         </template>
         <template #footer>
             <p class="text-surface-500 dark:text-surface-400 text-sm">Placeholder data</p>

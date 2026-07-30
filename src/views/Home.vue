@@ -16,9 +16,9 @@
     
 </script>
 <template>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-25 md:mt-0 mb-20 md:mb-0">
+    <div class="grid w-full flex-1 content-center grid-cols-1 gap-4 md:grid-cols-2">
 
-        <div class="flex flex-col items-center gap-4 p-4 justify-center text-center mb-25 md:mb-0">
+        <div class="flex min-h-[calc(100dvh-6rem)] flex-col items-center justify-center gap-4 p-4 text-center md:min-h-0">
             <Intro/>
         </div>
         <div class="flex flex-col items-center gap-4 p-4 justify-center text-center">

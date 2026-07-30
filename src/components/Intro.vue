@@ -19,7 +19,7 @@
 
     <div class="flex flex-row gap-4 mt-4 intro-buttons">
         <router-link to="/about">
-            <Button severity="help" variant="outlined" class="mt-4 hover-button">
+            <Button severity="help" class="mt-4 hover-button">
                 <ArrowRight/> About Me
             </Button>
         </router-link>
