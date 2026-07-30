@@ -5,6 +5,8 @@
     import ArrowRight from '@primeicons/vue/arrow-right';
 </script>
 <template>
+
+
     <h1 class="text-6xl font-bold minecraft mt-0 md:mt-5">Ivan Mansilla</h1>
             
     <div class="gap-2 flex">
@@ -29,6 +31,7 @@
 
     </div>
 
+
          
 </template>
 <style scoped>
@@ -40,11 +43,15 @@
         -webkit-text-fill-color: transparent;
         animation: rainbow-text 4s infinite;
         cursor: pointer;
+        text-shadow: 0 0 80px rgba(255, 255, 255, 0.4);
     }
     h1:hover {
         transform: scale(1.1);
     }
     
+    .floating-mew {
+        animation: float 3s ease-in-out infinite;
+    }
 
     @keyframes rainbow-text {
         0% { background-position: 0% 50%; }
