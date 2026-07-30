@@ -9,8 +9,16 @@ import Aura from '@primeuix/themes/aura'
 
 import './assets/global.css'
 
+import { OhVueIcon, addIcons } from "oh-vue-icons";
+import * as FaIcons from "oh-vue-icons/icons/fa";
+
+const Fa = Object.values({ ...FaIcons });
+addIcons(...Fa);
+
 
 const app = createApp(App)
+
+app.component("v-icon", OhVueIcon);
 
 app.use(PrimeVue, {
     license: import.meta.env.VITE_PRIMEVUE_LICENSE,
