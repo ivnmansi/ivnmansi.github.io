@@ -3,7 +3,6 @@ name: Deploy portfolio to GitHub Pages
 on:
   push:
     branches: [main]
-  workflow_dispatch:
 
 permissions:
   contents: read
@@ -35,6 +34,13 @@ jobs:
         run: npm run build
         env:
           VITE_PRIMEVUE_LICENSE: ${{ vars.VITE_PRIMEVUE_LICENSE }}
+
+      - name: Publish dist to build branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: build
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
