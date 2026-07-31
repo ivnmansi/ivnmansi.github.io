@@ -35,6 +35,7 @@ const skillGroups = [
         skills: [
             { name: 'Laravel', icon: 'fa-laravel' },
             { name: 'Django', icon: 'vi-file-type-django' },
+            { name: 'ASP.NET', icon: 'co-dot-net'}
 
         ],
     },
@@ -45,7 +46,8 @@ const skillGroups = [
             { name: 'Docker', icon: 'vi-file-type-docker' },
             { name: 'Linux', icon: 'vi-folder-type-linux' },
             { name: 'Git', icon: 'vi-file-type-git' },
-            { name: 'Proxmox', icon: 'co-proxmox' }
+            { name: 'Proxmox', icon: 'co-proxmox' },
+            { name: 'Nginx', icon: 'vi-file-type-nginx' }
             
         ],
     },

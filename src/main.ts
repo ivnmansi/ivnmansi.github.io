@@ -19,8 +19,8 @@ import * as ViIcons from "oh-vue-icons/icons/vi";
 const Vi = Object.values({ ...ViIcons });
 addIcons(...Vi);
 
-import { CoProxmox, CoPostman } from "oh-vue-icons/icons";
-addIcons(CoProxmox, CoPostman);
+import { CoProxmox, CoPostman, CoDotNet } from "oh-vue-icons/icons";
+addIcons(CoProxmox, CoPostman, CoDotNet);
 
 
 
