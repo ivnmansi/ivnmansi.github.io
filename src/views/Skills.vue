@@ -3,6 +3,7 @@ import PageTitle from '@/components/PageTitle.vue';
 import Button from 'primevue/button';
 import ArrowRight from '@primeicons/vue/arrow-right';
 
+
 const skillGroups = [
     {
         label: '01 // PROGRAMMING',
@@ -63,8 +64,18 @@ const skillGroups = [
 ];
 
 const certificates = [
-    { title: 'IT Essentials 7', issuer: 'Cisco Networking Academy', code: '01' },
-    { title: 'CCNA', issuer: 'Cisco Networking Academy', code: '02' },
+    {
+        title: 'IT Essentials 7',
+        issuer: 'Cisco Networking Academy',
+        code: '01',
+        url: 'https://www.credly.com/badges/4f500d6e-b2dd-438f-aca9-6b13bf33f251',
+    },
+    {
+        title: 'CCNA',
+        issuer: 'Cisco Networking Academy',
+        code: '02',
+        url: 'https://www.credly.com/badges/ca80fa54-9ee4-4eca-ac7b-8217a30f39ec',
+    },
 ];
 </script>
 
@@ -104,6 +115,11 @@ const certificates = [
                 </div>
                 <h3 class="mt-8 text-xl font-bold text-surface-100">{{ certificate.title }}</h3>
                 <p class="mt-2 text-surface-400">{{ certificate.issuer }}</p>
+                <div class="mt-6 flex justify-end">
+                    <a class="certificate-link minecraft text-sm text-purple-300" :href="certificate.url" target="_blank" rel="noopener noreferrer">
+                        VIEW CREDENTIAL ↗
+                    </a>
+                </div>
             </article>
         </div>
 
@@ -160,5 +176,10 @@ const certificates = [
     color: var(--p-purple-300);
     padding: 0.3rem 0.55rem;
     font-size: 0.65rem;
+}
+
+.certificate-link:hover {
+    color: var(--p-surface-0);
+    transform: translateX(3px);
 }
 </style>

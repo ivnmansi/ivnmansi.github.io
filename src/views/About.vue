@@ -4,6 +4,7 @@
     import PageTitle from '@/components/PageTitle.vue';
     import Button from 'primevue/button';
     import ArrowRight from '@primeicons/vue/arrow-right';
+
 </script>
 <template>
     <section class="about-page mx-auto flex w-full max-w-6xl flex-col gap-8 px-2 py-6 md:py-12">

@@ -8,6 +8,9 @@ const router = createRouter({
     { path: '/skills', name: 'Skills', component: () => import('../views/Skills.vue') },
     { path: '/projects', name: 'Projects', component: () => import('../views/Projects.vue') },
   ],
+  scrollBehavior() {
+    return { top: 0, behavior: 'smooth' }
+  },
 })
 
 export default router
