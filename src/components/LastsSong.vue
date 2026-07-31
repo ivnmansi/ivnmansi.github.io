@@ -40,7 +40,9 @@
         <div v-if="lastSong != null" class="grid grid-cols-2 gap-3 justify-center text-center" >
             
             <img v-if="lastSong.image!=''" :src="lastSong.image"class="w-40 h-auto rounded-lg mr-2" />
-            <Skeleton v-else class="rounded-lg mr-2 w-40 h-40" />
+            <div v-else class="w-40 h-40 rounded-lg mr-2 bg-surface-800 flex items-center justify-center">
+                <v-icon name="fa-music" class="text-surface-500 text-4xl" />
+            </div>
 
             <div class="text-left flex flex-col gap-1 text-align-center">
 

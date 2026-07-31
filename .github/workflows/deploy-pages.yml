@@ -31,9 +31,14 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
+        run: |
+          if [ -z "$VITE_PRIMEVUE_LICENSE" ]; then
+            echo "::error::VITE_PRIMEVUE_LICENSE is not configured."
+            exit 1
+          fi
+          npm run build
         env:
-          VITE_PRIMEVUE_LICENSE: ${{ vars.VITE_PRIMEVUE_LICENSE }}
+          VITE_PRIMEVUE_LICENSE: ${{ secrets.VITE_PRIMEVUE_LICENSE || vars.VITE_PRIMEVUE_LICENSE }}
 
       - name: Publish dist to build branch
         uses: peaceiris/actions-gh-pages@v4
