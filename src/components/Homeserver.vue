@@ -3,6 +3,7 @@
     import Panel from 'primevue/panel';
     import Tag from 'primevue/tag';
     import MeterGroup from 'primevue/metergroup';
+    import Button from 'primevue/button';
 
     import { getHomeserverStatus } from '@/composables/getHomeserverStatus';
     import type { HomeServerStatus } from '@/services/homeserverStatusService';
@@ -49,8 +50,21 @@
             <h2 class=""><v-icon name="fa-server" class="mr-2" />Homeserver status <Tag :severity="pcData?.isOnline ? 'success' : 'danger'">{{ pcData?.isOnline ? 'Online' : 'Offline' }}</Tag></h2>
         </template>
         <template #footer>
-            <p v-if="errorMessage" class="text-sm text-red-400">{{ errorMessage }}</p>
-            <p v-else class="text-sm text-surface-400">Last checked: {{ formatLastChecked(pcData?.lastChecked) }}</p>
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <p v-if="errorMessage" class="text-sm text-red-400">{{ errorMessage }}</p>
+                <p v-else class="text-sm text-surface-400">Last checked: {{ formatLastChecked(pcData?.lastChecked) }}</p>
+                <Button
+                    severity="secondary"
+                    rounded
+                    as="a"
+                    href="https://github.com/ivnmansi/homeserver-status"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View source code on GitHub"
+                >
+                    <v-icon name="fa-external-link-alt" />
+                </Button>
+            </div>
         </template>
         <div class="flex flex-col justify-center gap-2 text-left align-middle">
             <table class=" w-full text-sm text-surface-500">
