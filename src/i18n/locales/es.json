@@ -71,7 +71,7 @@
         "moreBuilds": "MÁS PROYECTOS EN GITHUB ↗",
         "items": {
             "juliaplots": {
-                "description": "Un plugin de Obsidian para generar gráficos de funciones directamente en tus notas con Julia. Publicado en la lista oficial de plugins comunitarios de Obsidian.",
+                "description": "Un plugin de Obsidian para generar gráficos de funciones directamente en tus apuntes utilizando Julia. Publicado en la lista oficial de plugins comunitarios de Obsidian.",
                 "tags": ["Plugin de Obsidian", "Julia", "TypeScript"]
             },
             "abboshell": {
