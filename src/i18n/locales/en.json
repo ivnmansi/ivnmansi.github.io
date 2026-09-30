@@ -1,8 +1,95 @@
 {
-    "nav": {
-        "home": "Home",
-        "about": "About",
-        "projects": "Projects",
-        "contact": "Contact"
+  "nav": {
+    "main": "Main",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects"
+  },
+  "intro": {
+    "title": "Ivan Mansilla",
+    "role": "🛠️ Full Stack Developer",
+    "enthusiast": "🐧 Linux Enthusiast",
+    "bio": "Computer science technician and computer engineering student based in Chile",
+    "aboutMe": "About Me"
+  },
+  "homeserver": {
+    "title": "Homeserver status",
+    "online": "Online",
+    "offline": "Offline",
+    "error": "Unable to reach the status API.",
+    "lastChecked": "Last checked: {date}",
+    "os": "OS",
+    "uptime": "Uptime",
+    "storage": "Storage",
+    "ram": "RAM",
+    "spaceUsed": "Space used",
+    "ramUsed": "RAM used",
+    "githubAria": "View source code on GitHub"
+  },
+  "lastSong": {
+    "title": "Last played song",
+    "apiUsed": "API used: biancarosa/lastfm-last-played",
+    "nowPlaying": "Now Playing",
+    "lastPlayedOn": "Last Played on {date}"
+  },
+  "about": {
+    "pageTitle": "About Me",
+    "greeting": "Hi, I'm",
+    "bio": "I’m a computer science technician and computer engineering student who enjoys turning curiosity into projects. I like learning by building, exploring new technologies, and taking on problems that stretch my skills.",
+    "tags": {
+      "web": "Web development",
+      "game": "Game development",
+      "lowLevel": "Low level programming"
+    },
+    "currentFocusTag": "// CURRENT FOCUS",
+    "currentFocusTitle": "Learning new things",
+    "currentFocusDesc": "Exploring new technologies and programming languages to expand my skill set",
+    "openToTag": "// OPEN TO",
+    "openToTitle": "Collaboration",
+    "openToDesc": "Looking for opportunities to learn and work with others on interesting projects",
+    "viewSkills": "View skills"
+  },
+  "skills": {
+    "pageTitle": "Skills",
+    "toolkit": "TOOLKIT",
+    "toolkitDesc": "Set of technologies and skills I have been learning, in college and through personal projects. I enjoy exploring new tools and frameworks, and I am always looking to expand my skill set.",
+    "groups": {
+      "programming": "01 // PROGRAMMING",
+      "frontend": "02 // FRONTEND",
+      "backend": "03 // BACKEND",
+      "devops": "04 // DEVOPS",
+      "otherTools": "05 // OTHER TOOLS"
+    },
+    "certificates": "Certificates",
+    "certified": "CERTIFIED",
+    "viewCredential": "VIEW CREDENTIAL ↗",
+    "viewProjects": "View projects"
+  },
+  "projects": {
+    "pageTitle": "Projects",
+    "viewRepository": "VIEW REPOSITORY ↗",
+    "moreBuilds": "MORE BUILDS ON GITHUB ↗",
+    "items": {
+      "juliaplots": {
+        "description": "An Obsidian plugin for generating function graphs directly in your notes with Julia. Plugin on the Obsidian community plugins list.",
+        "tags": ["Obsidian plugin", "Julia", "TypeScript"]
+      },
+      "abboshell": {
+        "description": "A simple shell made in C for Linux. Made for understanding how shells work.",
+        "tags": ["C", "Linux", "Shell"]
+      },
+      "kubibot": {
+        "description": "Prototype of a mobile 3D printed AI robot that can navigate and talk with people. Made for a college project.",
+        "tags": ["Python", "C++", "Arduino", "Raspberry Pi", "AI", "Robotics"]
+      },
+      "houtou": {
+        "description": "Bullet hell game made entirely in C using Allegro5. Made for a college project. Also available on itch.io.",
+        "tags": ["C", "Allegro5", "Game Development"]
+      }
     }
+  },
+  "footer": {
+    "madeWith": "Made with",
+    "mirrors": "Mirrors"
+  }
 }

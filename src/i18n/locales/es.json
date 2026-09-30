@@ -1,8 +1,95 @@
 {
     "nav": {
-        "home": "Inicio",
-        "about": "Acerca de",
-        "projects": "Proyectos",
-        "contact": "Contacto"
+        "main": "Inicio",
+        "about": "Sobre mí",
+        "skills": "Habilidades",
+        "projects": "Proyectos"
+    },
+    "intro": {
+        "title": "Ivan Mansilla",
+        "role": "🛠️ Desarrollador Full Stack",
+        "enthusiast": "🐧 Entusiasta de Linux",
+        "bio": "Técnico en computación y estudiante de ingeniería civil en computación en Chile",
+        "aboutMe": "Sobre mí"
+    },
+    "homeserver": {
+        "title": "Estado del homeserver",
+        "online": "En línea",
+        "offline": "Desconectado",
+        "error": "No se pudo conectar con la API de estado.",
+        "lastChecked": "Última comprobación: {date}",
+        "os": "SO",
+        "uptime": "Tiempo activo",
+        "storage": "Almacenamiento",
+        "ram": "RAM",
+        "spaceUsed": "Espacio usado",
+        "ramUsed": "RAM usada",
+        "githubAria": "Ver código fuente en GitHub"
+    },
+    "lastSong": {
+        "title": "Última canción reproducida",
+        "apiUsed": "API utilizada: biancarosa/lastfm-last-played",
+        "nowPlaying": "Reproduciendo ahora",
+        "lastPlayedOn": "Reproducida el {date}"
+    },
+    "about": {
+        "pageTitle": "Sobre mí",
+        "greeting": "Hola, soy",
+        "bio": "Soy técnico en informática y estudiante de ingeniería en computación al que le gusta convertir la curiosidad en proyectos. Me gusta aprender construyendo, explorando nuevas tecnologías y enfrentando problemas que desafían mis habilidades.",
+        "tags": {
+            "web": "Desarrollo web",
+            "game": "Desarrollo de videojuegos",
+            "lowLevel": "Programación de bajo nivel"
+        },
+        "currentFocusTag": "// ENFOQUE ACTUAL",
+        "currentFocusTitle": "Aprendiendo cosas nuevas",
+        "currentFocusDesc": "Explorando nuevas tecnologías y lenguajes de programación para ampliar mis habilidades",
+        "openToTag": "// DISPUESTO A",
+        "openToTitle": "Colaboración",
+        "openToDesc": "Buscando oportunidades para aprender y trabajar con otros en proyectos interesantes",
+        "viewSkills": "Ver habilidades"
+    },
+    "skills": {
+        "pageTitle": "Habilidades",
+        "toolkit": "TOOLKIT",
+        "toolkitDesc": "Conjunto de tecnologías y habilidades que he estado aprendiendo, en la universidad y mediante proyectos personales. Me gusta explorar nuevas herramientas y frameworks, y siempre busco expandir mis habilidades.",
+        "groups": {
+            "programming": "01 // PROGRAMACIÓN",
+            "frontend": "02 // FRONTEND",
+            "backend": "03 // BACKEND",
+            "devops": "04 // DEVOPS",
+            "otherTools": "05 // OTRAS HERRAMIENTAS"
+        },
+        "certificates": "Certificados",
+        "certified": "CERTIFICADO",
+        "viewCredential": "VER CREDENCIAL ↗",
+        "viewProjects": "Ver proyectos"
+    },
+    "projects": {
+        "pageTitle": "Proyectos",
+        "viewRepository": "VER REPOSITORIO ↗",
+        "moreBuilds": "MÁS PROYECTOS EN GITHUB ↗",
+        "items": {
+            "juliaplots": {
+                "description": "Un plugin de Obsidian para generar gráficos de funciones directamente en tus notas con Julia. Publicado en la lista oficial de plugins comunitarios de Obsidian.",
+                "tags": ["Plugin de Obsidian", "Julia", "TypeScript"]
+            },
+            "abboshell": {
+                "description": "Una shell simple hecha en C para Linux. Creada para entender cómo funcionan las terminales/shells.",
+                "tags": ["C", "Linux", "Shell"]
+            },
+            "kubibot": {
+                "description": "Prototipo de un robot móvil de IA impreso en 3D capaz de navegar y conversar con personas. Creado como proyecto universitario.",
+                "tags": ["Python", "C++", "Arduino", "Raspberry Pi", "IA", "Robótica"]
+            },
+            "houtou": {
+                "description": "Juego tipo bullet hell desarrollado íntegramente en C usando Allegro5. Hecho como proyecto universitario. También disponible en itch.io.",
+                "tags": ["C", "Allegro5", "Desarrollo de videojuegos"]
+            }
+        }
+    },
+    "footer": {
+        "madeWith": "Hecho con",
+        "mirrors": "Mirrors"
     }
 }

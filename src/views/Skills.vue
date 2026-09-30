@@ -1,12 +1,15 @@
 <script setup lang="ts">
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 import PageTitle from '@/components/PageTitle.vue';
 import Button from 'primevue/button';
 import ArrowRight from '@primeicons/vue/arrow-right';
 
+const { t } = useI18n();
 
-const skillGroups = [
+const skillGroups = computed(() => [
     {
-        label: '01 // PROGRAMMING',
+        label: t('skills.groups.programming'),
         colorClass: 'text-teal-200',
         skills: [
             { name: 'C', icon: 'vi-file-type-c' },
@@ -19,7 +22,7 @@ const skillGroups = [
         ],
     },
     {
-        label: '02 // FRONTEND',
+        label: t('skills.groups.frontend'),
         colorClass: 'text-purple-300',
         skills: [
             { name: 'Vue.js', icon: 'vi-file-type-vue' },
@@ -30,7 +33,7 @@ const skillGroups = [
         ],
     },
     {
-        label: '03 // BACKEND',
+        label: t('skills.groups.backend'),
         colorClass: 'text-pink-300',
         skills: [
             { name: 'Laravel', icon: 'fa-laravel' },
@@ -40,7 +43,7 @@ const skillGroups = [
         ],
     },
     {
-        label: '04 // DEVOPS',
+        label: t('skills.groups.devops'),
         colorClass: 'text-orange-300',
         skills: [
             { name: 'Docker', icon: 'vi-file-type-docker' },
@@ -52,7 +55,7 @@ const skillGroups = [
         ],
     },
     {
-        label: '05 // OTHER TOOLS',
+        label: t('skills.groups.otherTools'),
         colorClass: 'text-yellow-200',
         skills: [
             { name: 'Vim', icon: 'vi-file-type-vim' },
@@ -63,7 +66,7 @@ const skillGroups = [
             { name: 'Arduino', icon: 'vi-file-type-arduino' }
         ],            
     }
-];
+]);
 
 const certificates = [
     {
@@ -83,12 +86,12 @@ const certificates = [
 
 <template>
     <section class="mx-auto flex w-full max-w-6xl flex-col gap-8 px-2 py-6 md:py-12">
-        <PageTitle :number="2" title="Skills" />
+        <PageTitle :number="2" :title="t('skills.pageTitle')" />
 
         <div class="intro-card rounded-2xl border border-surface-700 p-6 md:p-8">
-            <span class="minecraft text-purple-400 text-2xl">TOOLKIT</span>
+            <span class="minecraft text-purple-400 text-2xl">{{ t('skills.toolkit') }}</span>
             <p class="mt-4 max-w-2xl leading-7 text-surface-300">
-                Set of technologies and skills I have been learning, in college and through personal projects. I enjoy exploring new tools and frameworks, and I am always looking to expand my skill set.
+                {{ t('skills.toolkitDesc') }}
             </p>
         </div>
 
@@ -106,20 +109,20 @@ const certificates = [
         <div class="mt-4 flex items-center gap-4">
             <span class="minecraft text-3xl text-surface-600">3.</span>
             <div class="h-px flex-1 bg-surface-700"></div>
-            <h2 class="minecraft text-2xl text-surface-100">Certificates</h2>
+            <h2 class="minecraft text-2xl text-surface-100">{{ t('skills.certificates') }}</h2>
         </div>
 
         <div class="grid gap-4 md:grid-cols-2">
             <article v-for="certificate in certificates" :key="certificate.title" class="certificate-card rounded-2xl border border-surface-700 p-6">
                 <div class="flex items-start justify-between gap-4">
                     <span class="minecraft text-lg text-purple-300">{{ certificate.code }}.</span>
-                    <span class="certificate-badge minecraft">CERTIFIED</span>
+                    <span class="certificate-badge minecraft">{{ t('skills.certified') }}</span>
                 </div>
                 <h3 class="mt-8 text-xl font-bold text-surface-100">{{ certificate.title }}</h3>
                 <p class="mt-2 text-surface-400">{{ certificate.issuer }}</p>
                 <div class="mt-6 flex justify-end">
                     <a class="certificate-link minecraft text-sm text-purple-300" :href="certificate.url" target="_blank" rel="noopener noreferrer">
-                        VIEW CREDENTIAL ↗
+                        {{ t('skills.viewCredential') }}
                     </a>
                 </div>
             </article>
@@ -128,7 +131,7 @@ const certificates = [
         <div class="mt-2 flex justify-end">
             <router-link to="/projects">
                 <Button severity="help" class="next-page-button">
-                    View projects <ArrowRight />
+                    {{ t('skills.viewProjects') }} <ArrowRight />
                 </Button>
             </router-link>
         </div>

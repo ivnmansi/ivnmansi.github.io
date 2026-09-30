@@ -1,14 +1,17 @@
 <script setup lang="ts">
+import { computed } from "vue";
+import { useI18n } from "vue-i18n";
 import PageTitle from "@/components/PageTitle.vue";
 
-const projects = [
+const { t, tm } = useI18n();
+
+const projects = computed(() => [
     {
         number: "01",
         title: "JuliaPlots",
         repository: "ivnmansi/juliaplots",
-        description:
-            "An Obsidian plugin for generating function graphs directly in your notes with Julia. Plugin on the Obsidian community plugins list.",
-        tags: ["Obsidian plugin", "Julia", "TypeScript"],
+        description: t("projects.items.juliaplots.description"),
+        tags: tm("projects.items.juliaplots.tags") as string[],
         accent: "teal",
         image: "https://github.com/ivnmansi/juliaplots/raw/master/demo/demo3D.gif",
         url: "https://community.obsidian.md/plugins/juliaplots",
@@ -17,8 +20,8 @@ const projects = [
         number: "02",
         title: "abboShell",
         repository: "ivnmansi/abboShell",
-        description: "A simple shell made in C for Linux. Made for understanding how shells work.",
-        tags: ["C", "Linux", "Shell"],
+        description: t("projects.items.abboshell.description"),
+        tags: tm("projects.items.abboshell.tags") as string[],
         accent: "purple",
         image: "https://github.com/ivnmansi/abboShell/raw/master/docs/image.png",
         url: "https://github.com/ivnmansi/abboShell",
@@ -27,9 +30,8 @@ const projects = [
         number: "03",
         title: "KubiBot",
         repository: "ayrtonmo/kubibot",
-        description:
-            "Prototype of a mobile 3D printed AI robot that can navigate and talk with people. Made for a college project.",
-        tags: ["Python", "C++", "Arduino", "Raspberry Pi", "AI", "Robotics"],
+        description: t("projects.items.kubibot.description"),
+        tags: tm("projects.items.kubibot.tags") as string[],
         accent: "teal",
         image: "https://github.com/ayrtonmo/kubibot/blob/main/docs/Fig/diseno_kubi_2.png?raw=true",
         url: "https://github.com/ayrtonmo/kubibot",
@@ -38,19 +40,18 @@ const projects = [
         number: "04",
         title: "HOUTOU",
         repository: "ivnmansi/HOUTOU",
-        description:
-            "Bullet hell game made entirely in C using Allegro5. Made for a college project. Also available on itch.io.",
-        tags: ["C", "Allegro5", "Game Development"],
+        description: t("projects.items.houtou.description"),
+        tags: tm("projects.items.houtou.tags") as string[],
         accent: "purple",
         image: "https://img.itch.zone/aW1nLzE3MjkyNTU0LnBuZw==/315x250%23c/iBSnkc.png",
         url: "https://github.com/ivnmansi/HOUTOU",
     },
-];
+]);
 </script>
 
 <template>
     <section class="projects-page mx-auto flex w-full max-w-6xl flex-col gap-8 px-2 py-6 md:py-12">
-        <PageTitle :number="4" title="Projects" />
+        <PageTitle :number="4" :title="t('projects.pageTitle')" />
 
         <div class="grid gap-5 md:grid-cols-2">
             <article
@@ -81,7 +82,7 @@ const projects = [
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        VIEW REPOSITORY ↗
+                        {{ t("projects.viewRepository") }}
                     </a>
                 </div>
             </article>
@@ -93,7 +94,7 @@ const projects = [
             target="_blank"
             rel="noopener noreferrer"
         >
-            MORE BUILDS ON GITHUB ↗
+            {{ t("projects.moreBuilds") }}
         </a>
     </section>
 </template>

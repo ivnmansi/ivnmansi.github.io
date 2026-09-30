@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { computed, ref } from "vue";
+import { useI18n } from "vue-i18n";
 
 import Button from "primevue/button";
 import Drawer from "primevue/drawer";
@@ -11,14 +12,16 @@ import Desktop from "@primeicons/vue/desktop";
 import Github from "@primeicons/vue/github";
 import Home from "@primeicons/vue/home";
 import Linkedin from "@primeicons/vue/linkedin";
+import LanguageSwitcher from "@/components/LanguageSwitcher.vue";
 
+const { t } = useI18n();
 const drawerVisible = ref(false);
 
-const menuItems = ref([
-    { label: "Main", icon: Home, to: "/" },
-    { label: "About", icon: AddressBook, to: "/about" },
-    { label: "Skills", icon: Desktop, to: "/skills" },
-    { label: "Projects", icon: Briefcase, to: "/projects" },
+const menuItems = computed(() => [
+    { label: t("nav.main"), icon: Home, to: "/" },
+    { label: t("nav.about"), icon: AddressBook, to: "/about" },
+    { label: t("nav.skills"), icon: Desktop, to: "/skills" },
+    { label: t("nav.projects"), icon: Briefcase, to: "/projects" },
 ]);
 </script>
 
@@ -66,18 +69,23 @@ const menuItems = ref([
             >
                 <Linkedin />
             </Button>
+
+            <LanguageSwitcher />
         </div>
 
-        <!-- Mobile menu button -->
-        <Button
-            iconOnly
-            severity="secondary"
-            variant="outlined"
-            class="lg:!hidden"
-            @click="drawerVisible = !drawerVisible"
-        >
-            <Bars />
-        </Button>
+        <!-- Mobile controls -->
+        <div class="flex items-center gap-3 lg:hidden">
+            <LanguageSwitcher />
+
+            <Button
+                iconOnly
+                severity="secondary"
+                variant="outlined"
+                @click="drawerVisible = !drawerVisible"
+            >
+                <Bars />
+            </Button>
+        </div>
 
         <Drawer v-model:visible="drawerVisible" position="right" class="bg">
             <ul class="list-none p-3 m-0 minecraft">
@@ -93,7 +101,7 @@ const menuItems = ref([
                 </li>
             </ul>
 
-            <div class="flex justify-center gap-4 p-3">
+            <div class="flex justify-center items-center gap-4 p-3">
                 <Button
                     iconOnly
                     rounded

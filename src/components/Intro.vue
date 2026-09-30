@@ -3,20 +3,23 @@ import ArrowRight from "@primeicons/vue/arrow-right";
 import Github from "@primeicons/vue/github";
 import Button from "primevue/button";
 import Chip from "primevue/chip";
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
 </script>
 <template>
-    <h1 class="text-6xl font-bold minecraft mt-0 md:mt-5">Ivan Mansilla</h1>
+    <h1 class="text-6xl font-bold minecraft mt-0 md:mt-5">{{ t("intro.title") }}</h1>
 
     <div class="gap-2 flex">
-        <Chip label="🛠️ Full Stack Developer" class="bg-primary text-surface-950 font-bold text-lg hover-chip" />
-        <Chip label="🐧 Linux Enthusiast" class="bg-primary text-surface-950 font-bold text-lg hover-chip" />
+        <Chip :label="t('intro.role')" class="bg-primary text-surface-950 font-bold text-lg hover-chip" />
+        <Chip :label="t('intro.enthusiast')" class="bg-primary text-surface-950 font-bold text-lg hover-chip" />
     </div>
 
-    <p>Computer science technician and computer engineering student based in Chile</p>
+    <p>{{ t("intro.bio") }}</p>
 
     <div class="flex flex-row gap-4 mt-4 intro-buttons">
         <router-link to="/about">
-            <Button severity="help" class="mt-4 hover-button"> <ArrowRight /> About Me </Button>
+            <Button severity="help" class="mt-4 hover-button"> <ArrowRight /> {{ t("intro.aboutMe") }} </Button>
         </router-link>
 
         <Button

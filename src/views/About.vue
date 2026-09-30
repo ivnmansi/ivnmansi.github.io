@@ -1,14 +1,16 @@
 <script setup lang="ts">
+    import { useI18n } from 'vue-i18n';
     import MinecraftSkin from '@/components/MinecraftSkin.vue';
     import AboutInfo from '@/components/AboutInfo.vue';
     import PageTitle from '@/components/PageTitle.vue';
     import Button from 'primevue/button';
     import ArrowRight from '@primeicons/vue/arrow-right';
 
+    const { t } = useI18n();
 </script>
 <template>
     <section class="about-page mx-auto flex w-full max-w-6xl flex-col gap-8 px-2 py-6 md:py-12">
-        <PageTitle :number='1' title="About Me"/>
+        <PageTitle :number='1' :title="t('about.pageTitle')"/>
 
         <div class="grid items-stretch gap-6 lg:grid-cols-[0.8fr_1.5fr]">
             <aside class="profile-card flex flex-col items-center justify-center overflow-hidden rounded-2xl border border-surface-700 p-6 text-center">
@@ -22,15 +24,15 @@
 
                 <div class="grid gap-4 sm:grid-cols-2">
                     <article class="info-card">
-                        <span class="minecraft text-sm text-teal-300">// CURRENT FOCUS</span>
-                        <h3>Learning new things</h3>
-                        <p>Exploring new technologies and programming languages to expand my skill set</p>
+                        <span class="minecraft text-sm text-teal-300">{{ t('about.currentFocusTag') }}</span>
+                        <h3>{{ t('about.currentFocusTitle') }}</h3>
+                        <p>{{ t('about.currentFocusDesc') }}</p>
                     </article>
 
                     <article class="info-card">
-                        <span class="minecraft text-sm text-purple-300">// OPEN TO</span>
-                        <h3>Collaboration</h3>
-                        <p>Looking for opportunities to learn and work with others on interesting projects</p>
+                        <span class="minecraft text-sm text-purple-300">{{ t('about.openToTag') }}</span>
+                        <h3>{{ t('about.openToTitle') }}</h3>
+                        <p>{{ t('about.openToDesc') }}</p>
                     </article>
                 </div>
             </div>
@@ -39,7 +41,7 @@
         <div class="mt-2 flex justify-end">
             <router-link to="/skills">
                 <Button severity="help" class="next-page-button">
-                    View skills <ArrowRight />
+                    {{ t('about.viewSkills') }} <ArrowRight />
                 </Button>
             </router-link>
         </div>
