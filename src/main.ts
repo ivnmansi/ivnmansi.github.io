@@ -1,13 +1,13 @@
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+import { createPinia } from "pinia";
+import { createApp } from "vue";
 
-import App from './App.vue'
-import router from './router'
+import App from "./App.vue";
+import router from "./router";
 
-import PrimeVue from 'primevue/config'
-import Aura from '@primeuix/themes/aura'
+import Aura from "@primeuix/themes/aura";
+import PrimeVue from "primevue/config";
 
-import './assets/global.css'
+import "./assets/global.css";
 
 import { OhVueIcon, addIcons } from "oh-vue-icons";
 
@@ -19,15 +19,16 @@ import * as ViIcons from "oh-vue-icons/icons/vi";
 const Vi = Object.values({ ...ViIcons });
 addIcons(...Vi);
 
-import { CoProxmox, CoPostman, CoDotNet } from "oh-vue-icons/icons";
+import { CoDotNet, CoPostman, CoProxmox } from "oh-vue-icons/icons";
 addIcons(CoProxmox, CoPostman, CoDotNet);
 
+import i18n from "./i18n";
 
-
-const app = createApp(App)
+const app = createApp(App);
 
 app.component("v-icon", OhVueIcon);
 
+app.use(i18n);
 
 app.use(PrimeVue, {
     license: import.meta.env.VITE_PRIMEVUE_LICENSE,
@@ -35,11 +36,11 @@ app.use(PrimeVue, {
     theme: {
         preset: Aura,
         options: {
-            darkModeSelector: '.dark',
-        }
-    }
+            darkModeSelector: ".dark",
+        },
+    },
 });
-app.use(createPinia())
-app.use(router)
+app.use(createPinia());
+app.use(router);
 
-app.mount('#app')
+app.mount("#app");
