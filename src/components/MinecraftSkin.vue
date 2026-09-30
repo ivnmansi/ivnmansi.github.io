@@ -14,7 +14,7 @@ onMounted(() => {
         height: 400,
     });
 
-    viewer.loadSkin("/skin.png");
+    viewer.loadSkin(`${import.meta.env.BASE_URL}skin.png`);
     viewer.autoRotate = true;
     viewer.animation = new WalkingAnimation();
 });
